@@ -7,12 +7,12 @@ router.get('/', (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   Tag.findAll({
-    attributes: ['id', 'category_url', 'title', 'created_at'],
+    attributes: ['id', 'tag_name'],
     order: [['creaded_at', 'DESC']],
     include: [
       {
-        model: Category,
-        attributes: ['category_name']
+        model: Product,
+         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
       }
     ]
 })
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id  
     },
-    attributes: ['id', 'category_url', 'title', 'created_at'],
+    attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
     include: [
       {
         model: Category,
