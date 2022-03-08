@@ -1,3 +1,5 @@
+//This file was part of starter code
+
 require('dotenv').config();
 
 const Sequelize = require('sequelize');
