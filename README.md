@@ -64,16 +64,18 @@ mysql Workbench
 https://drive.google.com/file/d/1rf3Q16B5kS-DaLLtMZJ5IChi7Z-r1Pbr/view
 
 
-
-
 ## Additional Resources
+Module 13 lesson and content
 
+https://sequelize.org/master/manual/assocs.html
 
+https://sequelize.org/v5/
+
+Google
 
 
 ## License
-
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Acknowledgements
